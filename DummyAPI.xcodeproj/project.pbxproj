@@ -34,6 +34,8 @@
 		4BD625602999AD8400F3A235 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6255F2999AD8400F3A235 /* Product.swift */; };
 		4BD625622999AD8A00F3A235 /* DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625612999AD8A00F3A235 /* DTO.swift */; };
 		4BD625642999ADAF00F3A235 /* ProductDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625632999ADAF00F3A235 /* ProductDTO.swift */; };
+		4BD625662999B1BB00F3A235 /* GetProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625652999B1BB00F3A235 /* GetProductsUseCase.swift */; };
+		4BD625682999B1C300F3A235 /* SearchProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625672999B1C300F3A235 /* SearchProductsUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		4BD6255F2999AD8400F3A235 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		4BD625612999AD8A00F3A235 /* DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTO.swift; sourceTree = "<group>"; };
 		4BD625632999ADAF00F3A235 /* ProductDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDTO.swift; sourceTree = "<group>"; };
+		4BD625652999B1BB00F3A235 /* GetProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsUseCase.swift; sourceTree = "<group>"; };
+		4BD625672999B1C300F3A235 /* SearchProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductsUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +218,8 @@
 		4BD6252B2999718600F3A235 /* CoreUseCases */ = {
 			isa = PBXGroup;
 			children = (
+				4BD625652999B1BB00F3A235 /* GetProductsUseCase.swift */,
+				4BD625672999B1C300F3A235 /* SearchProductsUseCase.swift */,
 			);
 			path = CoreUseCases;
 			sourceTree = "<group>";
@@ -428,6 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD625662999B1BB00F3A235 /* GetProductsUseCase.swift in Sources */,
 				4BD624E529996E1900F3A235 /* AppDelegate.swift in Sources */,
 				4BD6253A2999728600F3A235 /* AppDIContainer.swift in Sources */,
 				4BD6254D2999751400F3A235 /* Strings.swift in Sources */,
@@ -441,6 +448,7 @@
 				4BD6255E2999AD4500F3A235 /* ProductsService.swift in Sources */,
 				4BD625192999708C00F3A235 /* RESTError.swift in Sources */,
 				4BD62520299970C600F3A235 /* RESTRequest.swift in Sources */,
+				4BD625682999B1C300F3A235 /* SearchProductsUseCase.swift in Sources */,
 				4BD625232999712000F3A235 /* Config.swift in Sources */,
 				4BD625592999A22B00F3A235 /* String+localized.swift in Sources */,
 				4BD6251B2999709600F3A235 /* HTTPMethod.swift in Sources */,
