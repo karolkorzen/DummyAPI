@@ -15,7 +15,6 @@
 		4BD625162999702F00F3A235 /* RESTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625152999702F00F3A235 /* RESTService.swift */; };
 		4BD625192999708C00F3A235 /* RESTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625182999708C00F3A235 /* RESTError.swift */; };
 		4BD6251B2999709600F3A235 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6251A2999709600F3A235 /* HTTPMethod.swift */; };
-		4BD6251E299970AD00F3A235 /* CodableRESTRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6251D299970AD00F3A235 /* CodableRESTRequest.swift */; };
 		4BD62520299970C600F3A235 /* RESTRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6251F299970C600F3A235 /* RESTRequest.swift */; };
 		4BD625232999712000F3A235 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625222999712000F3A235 /* Config.swift */; };
 		4BD625342999723700F3A235 /* MainSceneSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625332999723700F3A235 /* MainSceneSceneView.swift */; };
@@ -27,6 +26,10 @@
 		4BD62540299972AA00F3A235 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6253F299972AA00F3A235 /* HomeCoordinator.swift */; };
 		4BD62545299972FA00F3A235 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BD62547299972FA00F3A235 /* Localizable.strings */; };
 		4BD6254D2999751400F3A235 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6254C2999751400F3A235 /* Strings.swift */; };
+		4BD6255229999E5A00F3A235 /* MapResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6255129999E5A00F3A235 /* MapResult.swift */; };
+		4BD6255429999FB600F3A235 /* JSONDecoder+SimpleDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6255329999FB600F3A235 /* JSONDecoder+SimpleDecoder.swift */; };
+		4BD625562999A06600F3A235 /* DataTaskPublisher+throwRESTErrorIfIncorrectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625552999A06600F3A235 /* DataTaskPublisher+throwRESTErrorIfIncorrectResponse.swift */; };
+		4BD625592999A22B00F3A235 /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625582999A22A00F3A235 /* String+localized.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +54,6 @@
 		4BD625152999702F00F3A235 /* RESTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTService.swift; sourceTree = "<group>"; };
 		4BD625182999708C00F3A235 /* RESTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTError.swift; sourceTree = "<group>"; };
 		4BD6251A2999709600F3A235 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		4BD6251D299970AD00F3A235 /* CodableRESTRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableRESTRequest.swift; sourceTree = "<group>"; };
 		4BD6251F299970C600F3A235 /* RESTRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTRequest.swift; sourceTree = "<group>"; };
 		4BD625222999712000F3A235 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		4BD625332999723700F3A235 /* MainSceneSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneSceneView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,10 @@
 		4BD62546299972FA00F3A235 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4BD625482999732C00F3A235 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		4BD6254C2999751400F3A235 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		4BD6255129999E5A00F3A235 /* MapResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapResult.swift; sourceTree = "<group>"; };
+		4BD6255329999FB600F3A235 /* JSONDecoder+SimpleDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+SimpleDecoder.swift"; sourceTree = "<group>"; };
+		4BD625552999A06600F3A235 /* DataTaskPublisher+throwRESTErrorIfIncorrectResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataTaskPublisher+throwRESTErrorIfIncorrectResponse.swift"; sourceTree = "<group>"; };
+		4BD625582999A22A00F3A235 /* String+localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+localized.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 		4BD624E329996E1900F3A235 /* DummyAPI */ = {
 			isa = PBXGroup;
 			children = (
+				4BD6254F29999E3400F3A235 /* Utils */,
 				4BD62541299972C500F3A235 /* Resources */,
 				4BD625312999721D00F3A235 /* HomeFeature */,
 				4BD6252C299971A500F3A235 /* CommonUI */,
@@ -134,21 +141,13 @@
 		4BD625172999703300F3A235 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				4BD6251C299970A000F3A235 /* Requests */,
+				4BD6254E29999DEF00F3A235 /* Utils */,
 				4BD625152999702F00F3A235 /* RESTService.swift */,
+				4BD6251F299970C600F3A235 /* RESTRequest.swift */,
 				4BD625182999708C00F3A235 /* RESTError.swift */,
 				4BD6251A2999709600F3A235 /* HTTPMethod.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		4BD6251C299970A000F3A235 /* Requests */ = {
-			isa = PBXGroup;
-			children = (
-				4BD6251D299970AD00F3A235 /* CodableRESTRequest.swift */,
-				4BD6251F299970C600F3A235 /* RESTRequest.swift */,
-			);
-			path = Requests;
 			sourceTree = "<group>";
 		};
 		4BD62521299970C900F3A235 /* Config */ = {
@@ -274,6 +273,40 @@
 			path = L10n;
 			sourceTree = "<group>";
 		};
+		4BD6254E29999DEF00F3A235 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4BD6255329999FB600F3A235 /* JSONDecoder+SimpleDecoder.swift */,
+				4BD625552999A06600F3A235 /* DataTaskPublisher+throwRESTErrorIfIncorrectResponse.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4BD6254F29999E3400F3A235 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4BD625572999A22100F3A235 /* Foundation */,
+				4BD6255029999E3900F3A235 /* Combine */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4BD6255029999E3900F3A235 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				4BD6255129999E5A00F3A235 /* MapResult.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
+		4BD625572999A22100F3A235 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				4BD625582999A22A00F3A235 /* String+localized.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -378,15 +411,18 @@
 				4BD624E529996E1900F3A235 /* AppDelegate.swift in Sources */,
 				4BD6253A2999728600F3A235 /* AppDIContainer.swift in Sources */,
 				4BD6254D2999751400F3A235 /* Strings.swift in Sources */,
+				4BD625562999A06600F3A235 /* DataTaskPublisher+throwRESTErrorIfIncorrectResponse.swift in Sources */,
 				4BD62540299972AA00F3A235 /* HomeCoordinator.swift in Sources */,
 				4BD6253C2999729800F3A235 /* AppCoordinator.swift in Sources */,
 				4BD624E729996E1900F3A235 /* SceneDelegate.swift in Sources */,
 				4BD625362999724800F3A235 /* MainSceneInteractor.swift in Sources */,
-				4BD6251E299970AD00F3A235 /* CodableRESTRequest.swift in Sources */,
+				4BD6255229999E5A00F3A235 /* MapResult.swift in Sources */,
 				4BD625192999708C00F3A235 /* RESTError.swift in Sources */,
 				4BD62520299970C600F3A235 /* RESTRequest.swift in Sources */,
 				4BD625232999712000F3A235 /* Config.swift in Sources */,
+				4BD625592999A22B00F3A235 /* String+localized.swift in Sources */,
 				4BD6251B2999709600F3A235 /* HTTPMethod.swift in Sources */,
+				4BD6255429999FB600F3A235 /* JSONDecoder+SimpleDecoder.swift in Sources */,
 				4BD625162999702F00F3A235 /* RESTService.swift in Sources */,
 				4BD6253E299972A300F3A235 /* HomeDIContainer.swift in Sources */,
 				4BD625382999725100F3A235 /* ProductViewModel.swift in Sources */,

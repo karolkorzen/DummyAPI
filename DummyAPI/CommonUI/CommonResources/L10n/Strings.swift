@@ -8,5 +8,5 @@
 import Foundation
 
 public enum L10n {
-    public static let search = NSLocalizedString("search", comment: "")
+    public static let search = "search".localized
 }
