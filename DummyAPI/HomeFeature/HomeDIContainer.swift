@@ -18,7 +18,7 @@ public final class HomeModuleDependencies {
 }
 
 public protocol HomeDIContainer {
-    
+    func resolve() -> DefaultMainSceneInteractor
 }
 
 //MARK: - DefaultHomeDIContainer
@@ -32,15 +32,28 @@ public final class DefaultHomeDIContainer: HomeDIContainer {
 
 //MARK: - Interactors
 extension DefaultHomeDIContainer {
-    
+    public func resolve() -> DefaultMainSceneInteractor {
+        DefaultMainSceneInteractor(
+            getProductsUseCase: resolve(),
+            searchProductsUseCase: resolve()
+        )
+    }
 }
 
 //MARK: - Use Cases
 extension DefaultHomeDIContainer {
+    private func resolve() -> GetProductsUseCase {
+        DefaultGetProductsUseCase(productsService: resolve())
+    }
     
+    private func resolve() -> SearchProductsUseCase {
+        DefaultSearchProductsUseCase(productsService: resolve())
+    }
 }
 
 //MARK: - Services
 extension DefaultHomeDIContainer {
-    
+    private func resolve() -> ProductsService {
+        DefaultProductsService(restService: dependencies.resolveRESTService())
+    }
 }

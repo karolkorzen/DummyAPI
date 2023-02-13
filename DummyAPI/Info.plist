@@ -4,10 +4,10 @@
 <dict>
 	<key>Config</key>
 	<dict>
-		<key>scheme</key>
-		<string>$(scheme)</string>
 		<key>host</key>
 		<string>$(host)</string>
+		<key>scheme</key>
+		<string>$(scheme)</string>
 	</dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

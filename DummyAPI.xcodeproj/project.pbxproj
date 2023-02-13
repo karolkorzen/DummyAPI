@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B412DA52999C30B00A3DA39 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B412DA42999C30B00A3DA39 /* Fonts.swift */; };
+		4B412DA72999C7B300A3DA39 /* ForEach+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B412DA62999C7B300A3DA39 /* ForEach+init.swift */; };
 		4BD624E529996E1900F3A235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD624E429996E1900F3A235 /* AppDelegate.swift */; };
 		4BD624E729996E1900F3A235 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD624E629996E1900F3A235 /* SceneDelegate.swift */; };
 		4BD624EE29996E1B00F3A235 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BD624ED29996E1B00F3A235 /* Assets.xcassets */; };
@@ -19,7 +21,7 @@
 		4BD625232999712000F3A235 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625222999712000F3A235 /* Config.swift */; };
 		4BD625342999723700F3A235 /* MainSceneSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625332999723700F3A235 /* MainSceneSceneView.swift */; };
 		4BD625362999724800F3A235 /* MainSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625352999724800F3A235 /* MainSceneInteractor.swift */; };
-		4BD625382999725100F3A235 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625372999725100F3A235 /* ProductViewModel.swift */; };
+		4BD625382999725100F3A235 /* ProductItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625372999725100F3A235 /* ProductItemViewModel.swift */; };
 		4BD6253A2999728600F3A235 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625392999728600F3A235 /* AppDIContainer.swift */; };
 		4BD6253C2999729800F3A235 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6253B2999729800F3A235 /* AppCoordinator.swift */; };
 		4BD6253E299972A300F3A235 /* HomeDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6253D299972A300F3A235 /* HomeDIContainer.swift */; };
@@ -36,6 +38,9 @@
 		4BD625642999ADAF00F3A235 /* ProductDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625632999ADAF00F3A235 /* ProductDTO.swift */; };
 		4BD625662999B1BB00F3A235 /* GetProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625652999B1BB00F3A235 /* GetProductsUseCase.swift */; };
 		4BD625682999B1C300F3A235 /* SearchProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625672999B1C300F3A235 /* SearchProductsUseCase.swift */; };
+		4BD6256B2999B2D200F3A235 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6256A2999B2D200F3A235 /* SceneView.swift */; };
+		4BD6256E2999B5CC00F3A235 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6256D2999B5CC00F3A235 /* Colors.swift */; };
+		4BD625712999BC2300F3A235 /* NumberFormatters+formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625702999BC2300F3A235 /* NumberFormatters+formatters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B412DA42999C30B00A3DA39 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		4B412DA62999C7B300A3DA39 /* ForEach+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForEach+init.swift"; sourceTree = "<group>"; };
 		4BD624E129996E1900F3A235 /* DummyAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DummyAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD624E429996E1900F3A235 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BD624E629996E1900F3A235 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +71,7 @@
 		4BD625222999712000F3A235 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		4BD625332999723700F3A235 /* MainSceneSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneSceneView.swift; sourceTree = "<group>"; };
 		4BD625352999724800F3A235 /* MainSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneInteractor.swift; sourceTree = "<group>"; };
-		4BD625372999725100F3A235 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		4BD625372999725100F3A235 /* ProductItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemViewModel.swift; sourceTree = "<group>"; };
 		4BD625392999728600F3A235 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
 		4BD6253B2999729800F3A235 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		4BD6253D299972A300F3A235 /* HomeDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDIContainer.swift; sourceTree = "<group>"; };
@@ -82,6 +89,9 @@
 		4BD625632999ADAF00F3A235 /* ProductDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDTO.swift; sourceTree = "<group>"; };
 		4BD625652999B1BB00F3A235 /* GetProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsUseCase.swift; sourceTree = "<group>"; };
 		4BD625672999B1C300F3A235 /* SearchProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductsUseCase.swift; sourceTree = "<group>"; };
+		4BD6256A2999B2D200F3A235 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
+		4BD6256D2999B5CC00F3A235 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		4BD625702999BC2300F3A235 /* NumberFormatters+formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatters+formatters.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +237,7 @@
 		4BD6252C299971A500F3A235 /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
+				4BD625692999B2C200F3A235 /* CommonUIComponents */,
 				4BD6252D299971B200F3A235 /* CommonResources */,
 				4BD62530299971CF00F3A235 /* CommonUIUtils */,
 			);
@@ -237,6 +248,8 @@
 			isa = PBXGroup;
 			children = (
 				4BD6254B2999750F00F3A235 /* L10n */,
+				4BD6256D2999B5CC00F3A235 /* Colors.swift */,
+				4B412DA42999C30B00A3DA39 /* Fonts.swift */,
 			);
 			path = CommonResources;
 			sourceTree = "<group>";
@@ -244,6 +257,7 @@
 		4BD62530299971CF00F3A235 /* CommonUIUtils */ = {
 			isa = PBXGroup;
 			children = (
+				4B412DA62999C7B300A3DA39 /* ForEach+init.swift */,
 			);
 			path = CommonUIUtils;
 			sourceTree = "<group>";
@@ -262,7 +276,7 @@
 			children = (
 				4BD625332999723700F3A235 /* MainSceneSceneView.swift */,
 				4BD625352999724800F3A235 /* MainSceneInteractor.swift */,
-				4BD625372999725100F3A235 /* ProductViewModel.swift */,
+				4BD625372999725100F3A235 /* ProductItemViewModel.swift */,
 			);
 			path = MainScene;
 			sourceTree = "<group>";
@@ -303,6 +317,7 @@
 		4BD6254F29999E3400F3A235 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4BD6256F2999BBEB00F3A235 /* Formatting */,
 				4BD625572999A22100F3A235 /* Foundation */,
 				4BD6255029999E3900F3A235 /* Combine */,
 			);
@@ -331,6 +346,22 @@
 				4BD6255B2999AC1C00F3A235 /* ProductsRESTRequest.swift */,
 			);
 			path = RESTRequest;
+			sourceTree = "<group>";
+		};
+		4BD625692999B2C200F3A235 /* CommonUIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				4BD6256A2999B2D200F3A235 /* SceneView.swift */,
+			);
+			path = CommonUIComponents;
+			sourceTree = "<group>";
+		};
+		4BD6256F2999BBEB00F3A235 /* Formatting */ = {
+			isa = PBXGroup;
+			children = (
+				4BD625702999BC2300F3A235 /* NumberFormatters+formatters.swift */,
+			);
+			path = Formatting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,21 +472,26 @@
 				4BD625562999A06600F3A235 /* DataTaskPublisher+throwRESTErrorIfIncorrectResponse.swift in Sources */,
 				4BD6255C2999AC1C00F3A235 /* ProductsRESTRequest.swift in Sources */,
 				4BD6253C2999729800F3A235 /* AppCoordinator.swift in Sources */,
+				4B412DA52999C30B00A3DA39 /* Fonts.swift in Sources */,
 				4BD625642999ADAF00F3A235 /* ProductDTO.swift in Sources */,
 				4BD624E729996E1900F3A235 /* SceneDelegate.swift in Sources */,
 				4BD625362999724800F3A235 /* MainSceneInteractor.swift in Sources */,
+				4BD6256E2999B5CC00F3A235 /* Colors.swift in Sources */,
 				4BD6255229999E5A00F3A235 /* MapResult.swift in Sources */,
 				4BD6255E2999AD4500F3A235 /* ProductsService.swift in Sources */,
+				4BD625712999BC2300F3A235 /* NumberFormatters+formatters.swift in Sources */,
 				4BD625192999708C00F3A235 /* RESTError.swift in Sources */,
 				4BD62520299970C600F3A235 /* RESTRequest.swift in Sources */,
 				4BD625682999B1C300F3A235 /* SearchProductsUseCase.swift in Sources */,
+				4B412DA72999C7B300A3DA39 /* ForEach+init.swift in Sources */,
 				4BD625232999712000F3A235 /* Config.swift in Sources */,
 				4BD625592999A22B00F3A235 /* String+localized.swift in Sources */,
+				4BD6256B2999B2D200F3A235 /* SceneView.swift in Sources */,
 				4BD6251B2999709600F3A235 /* HTTPMethod.swift in Sources */,
 				4BD6255429999FB600F3A235 /* JSONDecoder+SimpleDecoder.swift in Sources */,
 				4BD625162999702F00F3A235 /* RESTService.swift in Sources */,
 				4BD6253E299972A300F3A235 /* HomeDIContainer.swift in Sources */,
-				4BD625382999725100F3A235 /* ProductViewModel.swift in Sources */,
+				4BD625382999725100F3A235 /* ProductItemViewModel.swift in Sources */,
 				4BD625342999723700F3A235 /* MainSceneSceneView.swift in Sources */,
 				4BD625602999AD8400F3A235 /* Product.swift in Sources */,
 				4BD625622999AD8A00F3A235 /* DTO.swift in Sources */,
@@ -502,6 +538,7 @@
 /* Begin XCBuildConfiguration section */
 		4BD6250929996E1B00F3A235 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BD625482999732C00F3A235 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -563,6 +600,7 @@
 		};
 		4BD6250A29996E1B00F3A235 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BD625482999732C00F3A235 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -618,6 +656,7 @@
 		};
 		4BD6250C29996E1B00F3A235 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BD625482999732C00F3A235 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -628,9 +667,9 @@
 				INFOPLIST_FILE = DummyAPI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -646,6 +685,7 @@
 		};
 		4BD6250D29996E1B00F3A235 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BD625482999732C00F3A235 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -656,9 +696,9 @@
 				INFOPLIST_FILE = DummyAPI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -674,6 +714,7 @@
 		};
 		4BD6250F29996E1B00F3A235 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BD625482999732C00F3A235 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -694,6 +735,7 @@
 		};
 		4BD6251029996E1B00F3A235 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BD625482999732C00F3A235 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
