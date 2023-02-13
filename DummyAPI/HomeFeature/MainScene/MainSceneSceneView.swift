@@ -17,10 +17,8 @@ struct MainSceneSceneView<Interactor: MainSceneInteractor>: SceneView {
     ]
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             searchTextField
-            
-            Spacer()
             
             switch (interactor.isLoading, interactor.isEmpty) {
             case (true, _):
@@ -31,7 +29,7 @@ struct MainSceneSceneView<Interactor: MainSceneInteractor>: SceneView {
                 emptyView
             }
         }
-        .padding()
+        .padding(.horizontal)
         .background(
             Color.appBackground.ignoresSafeArea()
         )
@@ -44,6 +42,7 @@ struct MainSceneSceneView<Interactor: MainSceneInteractor>: SceneView {
                 .progressViewStyle(CircularProgressViewStyle(tint: .appTint))
                 .scaleEffect(2)
         }
+        .frame(maxHeight: .infinity)
     }
     
     private var itemsView: some View {
@@ -54,7 +53,7 @@ struct MainSceneSceneView<Interactor: MainSceneInteractor>: SceneView {
                     productPreviewView(productViewModel)
                 }
             }
-            .padding(.bottom)
+            .padding(.vertical)
         }
     }
     
@@ -71,9 +70,9 @@ struct MainSceneSceneView<Interactor: MainSceneInteractor>: SceneView {
             L10n.search,
             text: .init(get: { interactor.searchQuery }, set: { interactor.searchQueryChanged($0) })
         )
-        .textFieldStyle(.roundedBorder)
         .font(.appBody)
         .foregroundColor(.appPrimaryText)
+        .textFieldStyle(.roundedBorder)
     }
     
     @ViewBuilder
@@ -83,7 +82,8 @@ struct MainSceneSceneView<Interactor: MainSceneInteractor>: SceneView {
                 .multilineTextAlignment(.leading)
                 .font(.appSubheadlineSemibold)
                 .foregroundColor(.appPrimaryText)
-                .lineLimit(1)
+            
+            Spacer()
             
             AsyncImage(
                 url: viewModel.thumbnail,
@@ -92,21 +92,19 @@ struct MainSceneSceneView<Interactor: MainSceneInteractor>: SceneView {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(maxWidth: .infinity)
+                        .frame(height: 150)
                         .cornerRadius(10)
                 },
                 placeholder: {
                     ProgressView()
                         .progressViewStyle(CircularProgressViewStyle(tint: .black))
                         .scaleEffect(1)
-                        .frame(minHeight: 100)
-                        .frame(maxHeight: .infinity)
                         .frame(maxWidth: .infinity)
+                        .frame(height: 150)
                         .background(Color.white)
                         .cornerRadius(10)
                 }
             )
-            
-            Spacer()
             
             VStack {
                 Text(viewModel.brand)
@@ -122,6 +120,7 @@ struct MainSceneSceneView<Interactor: MainSceneInteractor>: SceneView {
                     .lineLimit(1)
             }
         }
+        .padding(16)
         .frame(maxWidth: .infinity)
         .background(Color.appTint)
         .cornerRadius(10)

@@ -26,8 +26,7 @@ public final class DefaultMainSceneInteractor: MainSceneInteractor {
     // MARK: Private properties
     private var products: [Product] = [] {
         didSet {
-            productViewModels = products.map{ ProductItemViewModel($0, priceFormatter: .usdPriceFormatter)
-            }
+            productViewModels = products.map{ ProductItemViewModel($0, priceFormatter: .usdPriceFormatter) }
         }
     }
     private let getProductsUseCase: GetProductsUseCase
@@ -61,6 +60,7 @@ public final class DefaultMainSceneInteractor: MainSceneInteractor {
     }
     
     public func searchQueryChanged(_ query: String) {
+        guard searchQuery != query else { return }
         searchQuery = query
         searchQueryChangedSignal.send()
     }
@@ -69,10 +69,10 @@ public final class DefaultMainSceneInteractor: MainSceneInteractor {
 //MARK: - API Calls
 private extension DefaultMainSceneInteractor {
     func getProducts() {
+        isLoading = true
         getProductsUseCase.execute()
             .mapResult()
             .sink { [unowned self] result in
-                self.isLoading = false
                 switch result {
                 case .success(let products):
                     self.products = products
@@ -80,15 +80,16 @@ private extension DefaultMainSceneInteractor {
                     self.products = []
                     #warning("handle error")
                 }
+                self.isLoading = false
             }
             .store(in: &cancellables)
     }
     
     func searchProducts(query: String) {
+        isLoading = true
         searchProductsUseCase.execute(input: query)
             .mapResult()
             .sink { [unowned self] result in
-                self.isLoading = false
                 switch result {
                 case .success(let products):
                     self.products = products
@@ -96,6 +97,7 @@ private extension DefaultMainSceneInteractor {
                     self.products = []
                     #warning("handle error")
                 }
+                self.isLoading = false
             }
             .store(in: &cancellables)
     }
