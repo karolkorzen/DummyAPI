@@ -1,1 +1,13 @@
+// Home
+
+"dummyAPI" = "Dummy API";
 "search" = "Search";
+"manufacturerLabel" = "Brand:";
+"noneProductsHaveBeenFound" = "None products have been found";
+"ok" = "Ok";
+
+// Errors
+
+"Error" = "Error";
+"noInternetConnection" = "No internet connection. Please try again";
+"unknownErrorHasOccured" = "An unknown error has occured. Please try again";
