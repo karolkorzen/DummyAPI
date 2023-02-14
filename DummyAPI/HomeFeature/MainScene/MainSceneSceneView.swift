@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct MainSceneSceneView<Interactor: MainSceneInteractor>: SceneView {
+struct MainSceneSceneView<Interactor: MainSceneInteractor>: View {
     @StateObject var interactor: Interactor
     
     private let gridLayout = [

@@ -24,7 +24,6 @@
 		4BD625362999724800F3A235 /* MainSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625352999724800F3A235 /* MainSceneInteractor.swift */; };
 		4BD625382999725100F3A235 /* ProductItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625372999725100F3A235 /* ProductItemViewModel.swift */; };
 		4BD6253A2999728600F3A235 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625392999728600F3A235 /* AppDIContainer.swift */; };
-		4BD6253C2999729800F3A235 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6253B2999729800F3A235 /* AppCoordinator.swift */; };
 		4BD6253E299972A300F3A235 /* HomeDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6253D299972A300F3A235 /* HomeDIContainer.swift */; };
 		4BD62545299972FA00F3A235 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BD62547299972FA00F3A235 /* Localizable.strings */; };
 		4BD6254D2999751400F3A235 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6254C2999751400F3A235 /* Strings.swift */; };
@@ -39,7 +38,6 @@
 		4BD625642999ADAF00F3A235 /* ProductDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625632999ADAF00F3A235 /* ProductDTO.swift */; };
 		4BD625662999B1BB00F3A235 /* GetProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625652999B1BB00F3A235 /* GetProductsUseCase.swift */; };
 		4BD625682999B1C300F3A235 /* SearchProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625672999B1C300F3A235 /* SearchProductsUseCase.swift */; };
-		4BD6256B2999B2D200F3A235 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6256A2999B2D200F3A235 /* SceneView.swift */; };
 		4BD6256E2999B5CC00F3A235 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD6256D2999B5CC00F3A235 /* Colors.swift */; };
 		4BD625712999BC2300F3A235 /* NumberFormatters+formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD625702999BC2300F3A235 /* NumberFormatters+formatters.swift */; };
 /* End PBXBuildFile section */
@@ -75,7 +73,6 @@
 		4BD625352999724800F3A235 /* MainSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneInteractor.swift; sourceTree = "<group>"; };
 		4BD625372999725100F3A235 /* ProductItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemViewModel.swift; sourceTree = "<group>"; };
 		4BD625392999728600F3A235 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
-		4BD6253B2999729800F3A235 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		4BD6253D299972A300F3A235 /* HomeDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDIContainer.swift; sourceTree = "<group>"; };
 		4BD62546299972FA00F3A235 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4BD625482999732C00F3A235 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
@@ -91,7 +88,6 @@
 		4BD625632999ADAF00F3A235 /* ProductDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDTO.swift; sourceTree = "<group>"; };
 		4BD625652999B1BB00F3A235 /* GetProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsUseCase.swift; sourceTree = "<group>"; };
 		4BD625672999B1C300F3A235 /* SearchProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductsUseCase.swift; sourceTree = "<group>"; };
-		4BD6256A2999B2D200F3A235 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
 		4BD6256D2999B5CC00F3A235 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		4BD625702999BC2300F3A235 /* NumberFormatters+formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatters+formatters.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,7 +142,6 @@
 				4BD624E629996E1900F3A235 /* SceneDelegate.swift */,
 				4BD625392999728600F3A235 /* AppDIContainer.swift */,
 				4BD625482999732C00F3A235 /* Config.xcconfig */,
-				4BD6253B2999729800F3A235 /* AppCoordinator.swift */,
 				4BD624ED29996E1B00F3A235 /* Assets.xcassets */,
 				4BD624EF29996E1B00F3A235 /* LaunchScreen.storyboard */,
 				4BD624F229996E1B00F3A235 /* Info.plist */,
@@ -354,7 +349,6 @@
 		4BD625692999B2C200F3A235 /* CommonUIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				4BD6256A2999B2D200F3A235 /* SceneView.swift */,
 			);
 			path = CommonUIComponents;
 			sourceTree = "<group>";
@@ -475,7 +469,6 @@
 				4BD6254D2999751400F3A235 /* Strings.swift in Sources */,
 				4BD625562999A06600F3A235 /* DataTaskPublisher+throwRESTErrorIfIncorrectResponse.swift in Sources */,
 				4BD6255C2999AC1C00F3A235 /* ProductsRESTRequest.swift in Sources */,
-				4BD6253C2999729800F3A235 /* AppCoordinator.swift in Sources */,
 				4B412DA52999C30B00A3DA39 /* Fonts.swift in Sources */,
 				4BD625642999ADAF00F3A235 /* ProductDTO.swift in Sources */,
 				4BD624E729996E1900F3A235 /* SceneDelegate.swift in Sources */,
@@ -490,7 +483,6 @@
 				4B412DA72999C7B300A3DA39 /* ForEach+init.swift in Sources */,
 				4BD625232999712000F3A235 /* Config.swift in Sources */,
 				4BD625592999A22B00F3A235 /* String+localized.swift in Sources */,
-				4BD6256B2999B2D200F3A235 /* SceneView.swift in Sources */,
 				4BD6251B2999709600F3A235 /* HTTPMethod.swift in Sources */,
 				4BD6255429999FB600F3A235 /* JSONDecoder+SimpleDecoder.swift in Sources */,
 				4BD625162999702F00F3A235 /* RESTService.swift in Sources */,
