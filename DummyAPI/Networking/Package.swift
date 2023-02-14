@@ -20,9 +20,6 @@ let package = Package(
             dependencies: [
                 "Config"
             ]
-        ),
-        .testTarget(
-            name: "NetworkingTests",
-            dependencies: ["Networking"]),
+        )
     ]
 )

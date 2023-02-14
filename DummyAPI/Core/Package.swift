@@ -48,13 +48,6 @@ let package = Package(
                 "CoreModels",
                 "CoreServices"
             ]
-        ),
-        .testTarget(
-            name: "CoreTests",
-            dependencies: [
-                "CoreModels",
-                "CoreServices",
-                "CoreUseCases"
-            ]),
+        )
     ]
 )

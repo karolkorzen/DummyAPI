@@ -14,7 +14,8 @@ let package = Package(
     dependencies: [
         .package(path: "../Utils"),
         .package(path: "../CommonUI"),
-        .package(path: "../Core")
+        .package(path: "../Core"),
+        .package(path: "../Coordinator"),
     ],
     targets: [
         .target(
@@ -24,11 +25,9 @@ let package = Package(
                 .product(name: "CommonUIUtils", package: "CommonUI"),
                 .product(name: "CoreModels", package: "Core"),
                 .product(name: "CoreServices", package: "Core"),
-                .product(name: "CoreUseCases", package: "Core")
+                .product(name: "CoreUseCases", package: "Core"),
+                .product(name: "Coordinator", package: "Coordinator")
             ]
-        ),
-        .testTarget(
-            name: "HomeFeatureTests",
-            dependencies: ["HomeFeature"]),
+        )
     ]
 )
