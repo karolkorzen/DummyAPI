@@ -15,4 +15,5 @@ public enum L10n {
     public static let ok = "ok".localized
     public static let noInternetConnection = "noInternetConnection".localized
     public static let unknownErrorHasOccured = "unknownErrorHasOccured".localized
+    public static let error = "Error".localized
 }

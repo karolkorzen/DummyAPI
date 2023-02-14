@@ -8,5 +8,6 @@
 
 // Errors
 
+"Error" = "Error";
 "noInternetConnection" = "No internet connection. Please try again";
 "unknownErrorHasOccured" = "An unknown error has occured. Please try again";

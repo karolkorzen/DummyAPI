@@ -29,6 +29,7 @@ struct MainSceneSceneView<Interactor: MainSceneInteractor>: SceneView {
                 emptyView
             }
         }
+        //TODO: - Global error handling with Coordinator pattern
         .alert(
             isPresented: .init(
                 get: { interactor.errorMessage != nil },
@@ -36,7 +37,7 @@ struct MainSceneSceneView<Interactor: MainSceneInteractor>: SceneView {
             )
         ) {
             Alert(
-                title: Text("Error"),
+                title: Text(L10n.error),
                 message: Text(interactor.errorMessage ?? ""),
                 dismissButton: .default(Text(L10n.ok.uppercased()))
             )
@@ -133,7 +134,7 @@ struct MainSceneSceneView<Interactor: MainSceneInteractor>: SceneView {
                     .lineLimit(1)
             }
         }
-        .padding(16)
+        .padding()
         .frame(maxWidth: .infinity)
         .background(Color.appTint)
         .cornerRadius(10)
