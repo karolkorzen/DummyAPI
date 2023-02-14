@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import HomeFeature
+import Networking
 
 //MARK: - AppDIContainer
 public protocol AppDIContainer {
