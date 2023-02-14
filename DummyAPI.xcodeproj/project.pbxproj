@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B02A264299B059B0083795A /* RESTError+errorDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B02A263299B059B0083795A /* RESTError+errorDescription.swift */; };
 		4B412DA52999C30B00A3DA39 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B412DA42999C30B00A3DA39 /* Fonts.swift */; };
 		4B412DA72999C7B300A3DA39 /* ForEach+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B412DA62999C7B300A3DA39 /* ForEach+init.swift */; };
 		4BD624E529996E1900F3A235 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD624E429996E1900F3A235 /* AppDelegate.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B02A263299B059B0083795A /* RESTError+errorDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RESTError+errorDescription.swift"; sourceTree = "<group>"; };
 		4B412DA42999C30B00A3DA39 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		4B412DA62999C7B300A3DA39 /* ForEach+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForEach+init.swift"; sourceTree = "<group>"; };
 		4BD624E129996E1900F3A235 /* DummyAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DummyAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -258,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				4B412DA62999C7B300A3DA39 /* ForEach+init.swift */,
+				4B02A263299B059B0083795A /* RESTError+errorDescription.swift */,
 			);
 			path = CommonUIUtils;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BD625662999B1BB00F3A235 /* GetProductsUseCase.swift in Sources */,
+				4B02A264299B059B0083795A /* RESTError+errorDescription.swift in Sources */,
 				4BD624E529996E1900F3A235 /* AppDelegate.swift in Sources */,
 				4BD6253A2999728600F3A235 /* AppDIContainer.swift in Sources */,
 				4BD6254D2999751400F3A235 /* Strings.swift in Sources */,

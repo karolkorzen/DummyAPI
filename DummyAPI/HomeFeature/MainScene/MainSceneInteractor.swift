@@ -12,8 +12,10 @@ public protocol MainSceneInteractor: ObservableObject {
     var isEmpty: Bool { get }
     var isLoading: Bool { get }
     var productViewModels: [ProductItemViewModel] { get }
+    var errorMessage: String? { get }
     var searchQuery: String { get }
     func searchQueryChanged(_ query: String)
+    func errorMessageDismissed()
 }
 
 public final class DefaultMainSceneInteractor: MainSceneInteractor {
@@ -22,6 +24,7 @@ public final class DefaultMainSceneInteractor: MainSceneInteractor {
     @Published public var isEmpty = false
     @Published public var searchQuery = ""
     @Published public var productViewModels: [ProductItemViewModel] = []
+    @Published public var errorMessage: String? = nil
     
     // MARK: Private properties
     private var products: [Product] = [] {
@@ -64,6 +67,10 @@ public final class DefaultMainSceneInteractor: MainSceneInteractor {
         searchQuery = query
         searchQueryChangedSignal.send()
     }
+    
+    public func errorMessageDismissed() {
+        errorMessage = nil
+    }
 }
 
 //MARK: - API Calls
@@ -76,9 +83,9 @@ private extension DefaultMainSceneInteractor {
                 switch result {
                 case .success(let products):
                     self.products = products
-                case .failure(_):
+                case .failure(let error):
                     self.products = []
-                    #warning("handle error")
+                    self.errorMessage = error.errorDescription
                 }
                 self.isLoading = false
             }
@@ -93,9 +100,9 @@ private extension DefaultMainSceneInteractor {
                 switch result {
                 case .success(let products):
                     self.products = products
-                case .failure(_):
+                case .failure(let error):
                     self.products = []
-                    #warning("handle error")
+                    self.errorMessage = error.errorDescription
                 }
                 self.isLoading = false
             }

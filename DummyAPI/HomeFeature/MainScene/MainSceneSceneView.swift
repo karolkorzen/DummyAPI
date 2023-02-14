@@ -29,6 +29,18 @@ struct MainSceneSceneView<Interactor: MainSceneInteractor>: SceneView {
                 emptyView
             }
         }
+        .alert(
+            isPresented: .init(
+                get: { interactor.errorMessage != nil },
+                set: { _ in interactor.errorMessageDismissed() }
+            )
+        ) {
+            Alert(
+                title: Text("Error"),
+                message: Text(interactor.errorMessage ?? ""),
+                dismissButton: .default(Text(L10n.ok.uppercased()))
+            )
+        }
         .padding(.horizontal)
         .background(
             Color.appBackground.ignoresSafeArea()
@@ -39,8 +51,8 @@ struct MainSceneSceneView<Interactor: MainSceneInteractor>: SceneView {
     private var loadingView: some View {
         VStack {
             ProgressView()
-                .progressViewStyle(CircularProgressViewStyle(tint: .appTint))
-                .scaleEffect(2)
+                .progressViewStyle(CircularProgressViewStyle(tint: .appPrimaryText))
+                .scaleEffect(4)
         }
         .frame(maxHeight: .infinity)
     }
