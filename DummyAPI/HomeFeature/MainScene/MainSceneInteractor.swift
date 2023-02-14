@@ -30,6 +30,7 @@ public final class DefaultMainSceneInteractor: MainSceneInteractor {
     private var products: [Product] = [] {
         didSet {
             productViewModels = products.map{ ProductItemViewModel($0, priceFormatter: .usdPriceFormatter) }
+            isEmpty = productViewModels.isEmpty
         }
     }
     private let getProductsUseCase: GetProductsUseCase

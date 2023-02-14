@@ -52,7 +52,7 @@ struct MainSceneSceneView<Interactor: MainSceneInteractor>: SceneView {
         VStack {
             ProgressView()
                 .progressViewStyle(CircularProgressViewStyle(tint: .appPrimaryText))
-                .scaleEffect(4)
+                .scaleEffect(2)
         }
         .frame(maxHeight: .infinity)
     }
@@ -75,6 +75,7 @@ struct MainSceneSceneView<Interactor: MainSceneInteractor>: SceneView {
                 .foregroundColor(.appPrimaryText)
                 .font(.appHeadline)
         }
+        .frame(maxHeight: .infinity)
     }
     
     private var searchTextField: some View {
