@@ -10,4 +10,5 @@ DummyAPI: https://dummyjson.com
 
 * UIKit - navigation (UIHostingControllers)
 * SwiftUI - views
-* MVVM
+* MVVM-C (Coordinators WIP)
+* SPM modular architecture
