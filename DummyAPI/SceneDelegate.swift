@@ -7,23 +7,25 @@
 
 import UIKit
 import SwiftUI
+import HomeFeature
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-    private lazy var diContainer = DefaultAppDIContainer()
-
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         
-        //TODO: - Coordinator
-        let diContainer: HomeDIContainer = diContainer.resolve()
-        let interactor = diContainer.resolve()
-        let sceneView = MainSceneSceneView(interactor: interactor)
-        let controller = UIHostingController(rootView: sceneView)
+        let diContainer = DefaultAppDIContainer()
+        let navigationController = UINavigationController()
+        let coordinator = AppCoordinator(
+            navigationController: navigationController,
+            diContainer: diContainer
+        )
+        coordinator.start()
         
-        window?.rootViewController = UINavigationController(rootViewController: controller)
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 
