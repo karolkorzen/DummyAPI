@@ -1,5 +1,5 @@
 //
-//  MainSceneInteractor.swift
+//  MainSceneViewModel.swift
 //  DummyAPI
 //
 //  Created by Karol Korzeń on 12/02/2023.
@@ -10,28 +10,28 @@ import Combine
 import CoreUseCases
 import CoreModels
 
-public protocol MainSceneInteractor: ObservableObject {
+public protocol MainSceneViewModel: ObservableObject {
     var isEmpty: Bool { get }
     var isLoading: Bool { get }
-    var productViewModels: [ProductItemViewModel] { get }
+    var productViewModels: [ProductItem] { get }
     var errorMessage: String? { get }
     var searchQuery: String { get }
     func searchQueryChanged(_ query: String)
     func errorMessageDismissed()
 }
 
-public final class DefaultMainSceneInteractor: MainSceneInteractor {
+public final class DefaultMainSceneViewModel: MainSceneViewModel {
     // MARK: Accessible properties
     @Published public var isLoading = true
     @Published public var isEmpty = false
     @Published public var searchQuery = ""
-    @Published public var productViewModels: [ProductItemViewModel] = []
+    @Published public var productViewModels: [ProductItem] = []
     @Published public var errorMessage: String? = nil
     
     // MARK: Private properties
     private var products: [Product] = [] {
         didSet {
-            productViewModels = products.map{ ProductItemViewModel($0, priceFormatter: .usdPriceFormatter) }
+            productViewModels = products.map{ ProductItem($0, priceFormatter: .usdPriceFormatter) }
             isEmpty = productViewModels.isEmpty
         }
     }
@@ -77,7 +77,7 @@ public final class DefaultMainSceneInteractor: MainSceneInteractor {
 }
 
 //MARK: - API Calls
-private extension DefaultMainSceneInteractor {
+private extension DefaultMainSceneViewModel {
     func getProducts() {
         isLoading = true
         getProductsUseCase.execute()

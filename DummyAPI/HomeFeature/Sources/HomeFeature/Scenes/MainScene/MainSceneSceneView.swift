@@ -10,8 +10,8 @@ import SwiftUI
 import CommonResources
 import CommonUIUtils
 
-struct MainSceneSceneView<Interactor: MainSceneInteractor>: View {
-    @StateObject var interactor: Interactor
+struct MainSceneSceneView<ViewModel: MainSceneViewModel>: View {
+    @StateObject var interactor: ViewModel
     
     private let gridLayout = [
         GridItem(.flexible(), spacing: 16),
@@ -92,7 +92,7 @@ struct MainSceneSceneView<Interactor: MainSceneInteractor>: View {
     }
     
     @ViewBuilder
-    private func productPreviewView(_ viewModel: ProductItemViewModel) -> some View {
+    private func productPreviewView(_ viewModel: ProductItem) -> some View {
         VStack(alignment: .center) {
             Text(viewModel.title)
                 .multilineTextAlignment(.leading)

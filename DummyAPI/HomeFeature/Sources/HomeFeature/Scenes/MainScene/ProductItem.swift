@@ -9,7 +9,7 @@ import Foundation
 import CommonResources
 import CoreModels
 
-public struct ProductItemViewModel: Hashable {
+public struct ProductItem: Hashable {
     public let id: Int
     public let title: String
     public let thumbnail: URL

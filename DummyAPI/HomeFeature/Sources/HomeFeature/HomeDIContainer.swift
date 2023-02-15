@@ -22,7 +22,7 @@ public final class HomeModuleDependencies {
 }
 
 public protocol HomeDIContainer {
-    func resolve() -> DefaultMainSceneInteractor
+    func resolve() -> DefaultMainSceneViewModel
 }
 
 //MARK: - DefaultHomeDIContainer
@@ -34,10 +34,10 @@ public final class DefaultHomeDIContainer: HomeDIContainer {
     }
 }
 
-//MARK: - Interactors
+//MARK: - ViewModels
 extension DefaultHomeDIContainer {
-    public func resolve() -> DefaultMainSceneInteractor {
-        DefaultMainSceneInteractor(
+    public func resolve() -> DefaultMainSceneViewModel {
+        DefaultMainSceneViewModel(
             getProductsUseCase: resolve(),
             searchProductsUseCase: resolve()
         )

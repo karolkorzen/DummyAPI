@@ -26,8 +26,8 @@ public final class HomeCoordinator: Coordinator {
     }
     
     private func pushMainScene() {
-        let interactor: DefaultMainSceneInteractor = diContainer.resolve()
-        let sceneView = MainSceneSceneView(interactor: interactor)
+        let viewModel: DefaultMainSceneViewModel = diContainer.resolve()
+        let sceneView = MainSceneSceneView(interactor: viewModel)
         let hostingController = UIHostingController(rootView: sceneView)
         navigationController.pushViewController(hostingController, animated: true)
     }
